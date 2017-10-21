@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049B98B8E8E3232D7F0741F0 /* Pods_EzukaAppconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */; };
+		16B0C552471F2D0B5DA0A7BD /* Pods_EzukaAppconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */; };
+		4CFCEC7AF0F14EA697BD5533 /* Pods_EzukaAppcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */; };
 		8032BD1E1F9BC4A5005C0E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */; };
 		8032BD201F9BC4A5005C0E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD1F1F9BC4A5005C0E6B /* ViewController.swift */; };
 		8032BD231F9BC4A5005C0E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032BD211F9BC4A5005C0E6B /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3581B02D388EEAD1663FF279 /* Pods-EzukaAppconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests.release.xcconfig"; sourceTree = "<group>"; };
+		634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD1A1F9BC4A5005C0E6B /* EzukaAppcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzukaAppcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8032BD1F1F9BC4A5005C0E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		8032BD391F9BC4A5005C0E6B /* EzukaAppconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EzukaAppconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD3D1F9BC4A5005C0E6B /* EzukaAppconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzukaAppconUITests.swift; sourceTree = "<group>"; };
 		8032BD3F1F9BC4A5005C0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A043CD05EF39C7D3D3008134 /* Pods-EzukaAppconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconUITests/Pods-EzukaAppconUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA08198ECBF4D699DC8A879F /* Pods-EzukaAppconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2831F01B9C887859B34800B /* Pods-EzukaAppcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppcon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppcon/Pods-EzukaAppcon.debug.xcconfig"; sourceTree = "<group>"; };
+		D742D648C8735F005FC1AB8B /* Pods-EzukaAppcon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppcon.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppcon/Pods-EzukaAppcon.release.xcconfig"; sourceTree = "<group>"; };
+		F7BC1BE4733A54D261598417 /* Pods-EzukaAppconUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconUITests/Pods-EzukaAppconUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFCEC7AF0F14EA697BD5533 /* Pods_EzukaAppcon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B0C552471F2D0B5DA0A7BD /* Pods_EzukaAppconTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049B98B8E8E3232D7F0741F0 /* Pods_EzukaAppconUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C8D968A1743B41F9B398AD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */,
+				66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */,
+				960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8032BD111F9BC4A5005C0E6B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				8032BD311F9BC4A5005C0E6B /* EzukaAppconTests */,
 				8032BD3C1F9BC4A5005C0E6B /* EzukaAppconUITests */,
 				8032BD1B1F9BC4A5005C0E6B /* Products */,
+				93884A54A591D8861CAAC429 /* Pods */,
+				0C8D968A1743B41F9B398AD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = EzukaAppconUITests;
 			sourceTree = "<group>";
 		};
+		93884A54A591D8861CAAC429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2831F01B9C887859B34800B /* Pods-EzukaAppcon.debug.xcconfig */,
+				D742D648C8735F005FC1AB8B /* Pods-EzukaAppcon.release.xcconfig */,
+				CA08198ECBF4D699DC8A879F /* Pods-EzukaAppconTests.debug.xcconfig */,
+				3581B02D388EEAD1663FF279 /* Pods-EzukaAppconTests.release.xcconfig */,
+				F7BC1BE4733A54D261598417 /* Pods-EzukaAppconUITests.debug.xcconfig */,
+				A043CD05EF39C7D3D3008134 /* Pods-EzukaAppconUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8032BD421F9BC4A5005C0E6B /* Build configuration list for PBXNativeTarget "EzukaAppcon" */;
 			buildPhases = (
+				3002364068BEDB48A70E245F /* [CP] Check Pods Manifest.lock */,
 				8032BD161F9BC4A5005C0E6B /* Sources */,
 				8032BD171F9BC4A5005C0E6B /* Frameworks */,
 				8032BD181F9BC4A5005C0E6B /* Resources */,
+				8635F250702695B2703DC7A8 /* [CP] Embed Pods Frameworks */,
+				50EEFCD0CEDBCB50B73E4FE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8032BD451F9BC4A5005C0E6B /* Build configuration list for PBXNativeTarget "EzukaAppconTests" */;
 			buildPhases = (
+				8B35E1E5445A20900F6F0035 /* [CP] Check Pods Manifest.lock */,
 				8032BD2A1F9BC4A5005C0E6B /* Sources */,
 				8032BD2B1F9BC4A5005C0E6B /* Frameworks */,
 				8032BD2C1F9BC4A5005C0E6B /* Resources */,
+				3B4F59BCDF4367842D5F34E0 /* [CP] Embed Pods Frameworks */,
+				254CD7D461D941338B7C73E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8032BD481F9BC4A5005C0E6B /* Build configuration list for PBXNativeTarget "EzukaAppconUITests" */;
 			buildPhases = (
+				E2AB710E381E9902DFF77098 /* [CP] Check Pods Manifest.lock */,
 				8032BD351F9BC4A5005C0E6B /* Sources */,
 				8032BD361F9BC4A5005C0E6B /* Frameworks */,
 				8032BD371F9BC4A5005C0E6B /* Resources */,
+				513210EE8721FD2F9E994CEF /* [CP] Embed Pods Frameworks */,
+				E96EDD79BFA7D423CF46723D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		254CD7D461D941338B7C73E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3002364068BEDB48A70E245F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B4F59BCDF4367842D5F34E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50EEFCD0CEDBCB50B73E4FE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzukaAppcon/Pods-EzukaAppcon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		513210EE8721FD2F9E994CEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzukaAppconUITests/Pods-EzukaAppconUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8635F250702695B2703DC7A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzukaAppcon/Pods-EzukaAppcon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B35E1E5445A20900F6F0035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AB710E381E9902DFF77098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E96EDD79BFA7D423CF46723D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzukaAppconUITests/Pods-EzukaAppconUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8032BD161F9BC4A5005C0E6B /* Sources */ = {
@@ -424,6 +611,7 @@
 		};
 		8032BD431F9BC4A5005C0E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2831F01B9C887859B34800B /* Pods-EzukaAppcon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,12 +620,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		8032BD441F9BC4A5005C0E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D742D648C8735F005FC1AB8B /* Pods-EzukaAppcon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,12 +635,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		8032BD461F9BC4A5005C0E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA08198ECBF4D699DC8A879F /* Pods-EzukaAppconTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +658,7 @@
 		};
 		8032BD471F9BC4A5005C0E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3581B02D388EEAD1663FF279 /* Pods-EzukaAppconTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +675,7 @@
 		};
 		8032BD491F9BC4A5005C0E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BC1BE4733A54D261598417 /* Pods-EzukaAppconUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +691,7 @@
 		};
 		8032BD4A1F9BC4A5005C0E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A043CD05EF39C7D3D3008134 /* Pods-EzukaAppconUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
