@@ -6,6 +6,7 @@ target 'EzukaAppcon' do
   use_frameworks!
 
   # Pods for EzukaAppcon
+  pod 'SDWebImage'
 
   target 'EzukaAppconTests' do
     inherit! :search_paths

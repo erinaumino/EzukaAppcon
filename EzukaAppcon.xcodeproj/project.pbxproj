@@ -11,12 +11,17 @@
 		16B0C552471F2D0B5DA0A7BD /* Pods_EzukaAppconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */; };
 		4CFCEC7AF0F14EA697BD5533 /* Pods_EzukaAppcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */; };
 		8032BD1E1F9BC4A5005C0E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */; };
-		8032BD201F9BC4A5005C0E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD1F1F9BC4A5005C0E6B /* ViewController.swift */; };
 		8032BD231F9BC4A5005C0E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032BD211F9BC4A5005C0E6B /* Main.storyboard */; };
 		8032BD251F9BC4A5005C0E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8032BD241F9BC4A5005C0E6B /* Assets.xcassets */; };
 		8032BD281F9BC4A5005C0E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032BD261F9BC4A5005C0E6B /* LaunchScreen.storyboard */; };
 		8032BD331F9BC4A5005C0E6B /* EzukaAppconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD321F9BC4A5005C0E6B /* EzukaAppconTests.swift */; };
 		8032BD3E1F9BC4A5005C0E6B /* EzukaAppconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD3D1F9BC4A5005C0E6B /* EzukaAppconUITests.swift */; };
+		80CAB8E01F9BDD6500BDDB4A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAB8DF1F9BDD6500BDDB4A /* ListViewController.swift */; };
+		80D480901F9BF26F00270BB9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4808F1F9BF26F00270BB9 /* DetailViewController.swift */; };
+		80D480921F9BF9DB00270BB9 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D480911F9BF9DB00270BB9 /* App.swift */; };
+		80D480971F9C029200270BB9 /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D480961F9C029200270BB9 /* AppCollectionViewCell.swift */; };
+		80D480991F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D480981F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift */; };
+		80D4809B1F9C133600270BB9 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4809A1F9C133600270BB9 /* UIViewExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,6 @@
 		66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD1A1F9BC4A5005C0E6B /* EzukaAppcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzukaAppcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8032BD1F1F9BC4A5005C0E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8032BD221F9BC4A5005C0E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8032BD241F9BC4A5005C0E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8032BD271F9BC4A5005C0E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,12 @@
 		8032BD391F9BC4A5005C0E6B /* EzukaAppconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EzukaAppconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD3D1F9BC4A5005C0E6B /* EzukaAppconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzukaAppconUITests.swift; sourceTree = "<group>"; };
 		8032BD3F1F9BC4A5005C0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CAB8DF1F9BDD6500BDDB4A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		80D4808F1F9BF26F00270BB9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		80D480911F9BF9DB00270BB9 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		80D480961F9C029200270BB9 /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
+		80D480981F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		80D4809A1F9C133600270BB9 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A043CD05EF39C7D3D3008134 /* Pods-EzukaAppconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconUITests/Pods-EzukaAppconUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CA08198ECBF4D699DC8A879F /* Pods-EzukaAppconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,9 +134,13 @@
 		8032BD1C1F9BC4A5005C0E6B /* EzukaAppcon */ = {
 			isa = PBXGroup;
 			children = (
+				80CAB8E11F9BDD8200BDDB4A /* ViewController */,
 				8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */,
-				8032BD1F1F9BC4A5005C0E6B /* ViewController.swift */,
 				8032BD211F9BC4A5005C0E6B /* Main.storyboard */,
+				80D4809A1F9C133600270BB9 /* UIViewExtention.swift */,
+				80D480961F9C029200270BB9 /* AppCollectionViewCell.swift */,
+				80D480981F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift */,
+				80D480911F9BF9DB00270BB9 /* App.swift */,
 				8032BD241F9BC4A5005C0E6B /* Assets.xcassets */,
 				8032BD261F9BC4A5005C0E6B /* LaunchScreen.storyboard */,
 				8032BD291F9BC4A5005C0E6B /* Info.plist */,
@@ -150,6 +164,15 @@
 				8032BD3F1F9BC4A5005C0E6B /* Info.plist */,
 			);
 			path = EzukaAppconUITests;
+			sourceTree = "<group>";
+		};
+		80CAB8E11F9BDD8200BDDB4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80CAB8DF1F9BDD6500BDDB4A /* ListViewController.swift */,
+				80D4808F1F9BF26F00270BB9 /* DetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		93884A54A591D8861CAAC429 /* Pods */ = {
@@ -242,6 +265,7 @@
 				TargetAttributes = {
 					8032BD191F9BC4A5005C0E6B = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					8032BD2D1F9BC4A5005C0E6B = {
@@ -446,8 +470,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8032BD201F9BC4A5005C0E6B /* ViewController.swift in Sources */,
+				80D4809B1F9C133600270BB9 /* UIViewExtention.swift in Sources */,
+				80D480901F9BF26F00270BB9 /* DetailViewController.swift in Sources */,
+				80D480921F9BF9DB00270BB9 /* App.swift in Sources */,
 				8032BD1E1F9BC4A5005C0E6B /* AppDelegate.swift in Sources */,
+				80CAB8E01F9BDD6500BDDB4A /* ListViewController.swift in Sources */,
+				80D480971F9C029200270BB9 /* AppCollectionViewCell.swift in Sources */,
+				80D480991F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,11 +643,13 @@
 			baseConfigurationReference = D2831F01B9C887859B34800B /* Pods-EzukaAppcon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EzukaAppcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -629,6 +660,7 @@
 			baseConfigurationReference = D742D648C8735F005FC1AB8B /* Pods-EzukaAppcon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EzukaAppcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
