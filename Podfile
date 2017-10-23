@@ -7,6 +7,8 @@ target 'EzukaAppcon' do
 
   # Pods for EzukaAppcon
   pod 'SDWebImage'
+  pod 'QRCodeReader.swift'
+  pod 'Alamofire'
 
   target 'EzukaAppconTests' do
     inherit! :search_paths

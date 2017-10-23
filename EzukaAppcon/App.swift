@@ -9,12 +9,13 @@
 import Foundation
 
 struct App: Codable {
-    let name: String
-    let teamName: String
-    let square: String
-    let urls: [String]
-    let about: String
-    let feature: String
+    let name: String?
+    let teamName: String?
+    let square: String?
+    let urls: [String?]
+    let about: String?
+    let feature: String?
+    let uid: String
     
     init(name: String, teamName: String, square: String, urls:[String], about: String, feature:String) {
         self.name = name
@@ -23,5 +24,6 @@ struct App: Codable {
         self.urls = urls
         self.about = about
         self.feature = feature
+        self.uid = ""
     }
 }

@@ -1,14 +1,20 @@
 PODS:
+  - Alamofire (4.5.1)
+  - QRCodeReader.swift (8.0.3)
   - SDWebImage (4.1.2):
     - SDWebImage/Core (= 4.1.2)
   - SDWebImage/Core (4.1.2)
 
 DEPENDENCIES:
+  - Alamofire
+  - QRCodeReader.swift
   - SDWebImage
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  QRCodeReader.swift: 7c98a05c2544a7c8737853845428b4460273d50d
   SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
 
-PODFILE CHECKSUM: 97fadd0634a251f8816b0f96ad51548872049a10
+PODFILE CHECKSUM: a680b7ae4c0cd68a315595c7d7e5f70c83dd69e6
 
 COCOAPODS: 1.2.1

@@ -10,6 +10,9 @@
 		049B98B8E8E3232D7F0741F0 /* Pods_EzukaAppconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */; };
 		16B0C552471F2D0B5DA0A7BD /* Pods_EzukaAppconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */; };
 		4CFCEC7AF0F14EA697BD5533 /* Pods_EzukaAppcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */; };
+		802894031F9E82BE003A263A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802894021F9E82BE003A263A /* FirstViewController.swift */; };
+		802894051F9E8328003A263A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802894041F9E8328003A263A /* Router.swift */; };
+		802894071F9E8B28003A263A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802894061F9E8B28003A263A /* AppModel.swift */; };
 		8032BD1E1F9BC4A5005C0E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */; };
 		8032BD231F9BC4A5005C0E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032BD211F9BC4A5005C0E6B /* Main.storyboard */; };
 		8032BD251F9BC4A5005C0E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8032BD241F9BC4A5005C0E6B /* Assets.xcassets */; };
@@ -22,6 +25,8 @@
 		80D480971F9C029200270BB9 /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D480961F9C029200270BB9 /* AppCollectionViewCell.swift */; };
 		80D480991F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D480981F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift */; };
 		80D4809B1F9C133600270BB9 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4809A1F9C133600270BB9 /* UIViewExtention.swift */; };
+		80D4809F1F9CDF0900270BB9 /* 投票アイコン1.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D4809E1F9CDF0900270BB9 /* 投票アイコン1.png */; };
+		80D480A31F9DF43D00270BB9 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D480A21F9DF43D00270BB9 /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,9 @@
 		3581B02D388EEAD1663FF279 /* Pods-EzukaAppconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests.release.xcconfig"; sourceTree = "<group>"; };
 		634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802894021F9E82BE003A263A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		802894041F9E8328003A263A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		802894061F9E8B28003A263A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		8032BD1A1F9BC4A5005C0E6B /* EzukaAppcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzukaAppcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8032BD221F9BC4A5005C0E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +71,8 @@
 		80D480961F9C029200270BB9 /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
 		80D480981F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 		80D4809A1F9C133600270BB9 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		80D4809E1F9CDF0900270BB9 /* 投票アイコン1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "投票アイコン1.png"; sourceTree = "<group>"; };
+		80D480A21F9DF43D00270BB9 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = EzukaAppcon/Logo.png; sourceTree = "<group>"; };
 		960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A043CD05EF39C7D3D3008134 /* Pods-EzukaAppconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconUITests/Pods-EzukaAppconUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CA08198ECBF4D699DC8A879F /* Pods-EzukaAppconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				8032BD1C1F9BC4A5005C0E6B /* EzukaAppcon */,
+				80D480A21F9DF43D00270BB9 /* Logo.png */,
+				80D4809E1F9CDF0900270BB9 /* 投票アイコン1.png */,
 				8032BD311F9BC4A5005C0E6B /* EzukaAppconTests */,
 				8032BD3C1F9BC4A5005C0E6B /* EzukaAppconUITests */,
 				8032BD1B1F9BC4A5005C0E6B /* Products */,
@@ -134,10 +146,12 @@
 		8032BD1C1F9BC4A5005C0E6B /* EzukaAppcon */ = {
 			isa = PBXGroup;
 			children = (
+				802894061F9E8B28003A263A /* AppModel.swift */,
 				80CAB8E11F9BDD8200BDDB4A /* ViewController */,
 				8032BD1D1F9BC4A5005C0E6B /* AppDelegate.swift */,
 				8032BD211F9BC4A5005C0E6B /* Main.storyboard */,
 				80D4809A1F9C133600270BB9 /* UIViewExtention.swift */,
+				802894041F9E8328003A263A /* Router.swift */,
 				80D480961F9C029200270BB9 /* AppCollectionViewCell.swift */,
 				80D480981F9C0C9600270BB9 /* ThumbnailCollectionViewCell.swift */,
 				80D480911F9BF9DB00270BB9 /* App.swift */,
@@ -171,6 +185,7 @@
 			children = (
 				80CAB8DF1F9BDD6500BDDB4A /* ListViewController.swift */,
 				80D4808F1F9BF26F00270BB9 /* DetailViewController.swift */,
+				802894021F9E82BE003A263A /* FirstViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -305,9 +320,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D480A31F9DF43D00270BB9 /* Logo.png in Resources */,
 				8032BD281F9BC4A5005C0E6B /* LaunchScreen.storyboard in Resources */,
 				8032BD251F9BC4A5005C0E6B /* Assets.xcassets in Resources */,
 				8032BD231F9BC4A5005C0E6B /* Main.storyboard in Resources */,
+				80D4809F1F9CDF0900270BB9 /* 投票アイコン1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +490,9 @@
 				80D4809B1F9C133600270BB9 /* UIViewExtention.swift in Sources */,
 				80D480901F9BF26F00270BB9 /* DetailViewController.swift in Sources */,
 				80D480921F9BF9DB00270BB9 /* App.swift in Sources */,
+				802894071F9E8B28003A263A /* AppModel.swift in Sources */,
+				802894031F9E82BE003A263A /* FirstViewController.swift in Sources */,
+				802894051F9E8328003A263A /* Router.swift in Sources */,
 				8032BD1E1F9BC4A5005C0E6B /* AppDelegate.swift in Sources */,
 				80CAB8E01F9BDD6500BDDB4A /* ListViewController.swift in Sources */,
 				80D480971F9C029200270BB9 /* AppCollectionViewCell.swift in Sources */,
@@ -645,13 +665,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVQD32T43P;
 				INFOPLIST_FILE = EzukaAppcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -662,12 +683,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVQD32T43P;
 				INFOPLIST_FILE = EzukaAppcon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

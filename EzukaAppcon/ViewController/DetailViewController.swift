@@ -8,6 +8,9 @@
 
 import UIKit
 import SDWebImage
+import QRCodeReader
+import AVFoundation
+import Alamofire
 
 class DetailViewController: UIViewController {
 
@@ -20,16 +23,34 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var featureLabel: UILabel!
     @IBOutlet weak var wrapperView: UIView!
     
+    lazy var readerVC: QRCodeReaderViewController = {
+        let builder = QRCodeReaderViewControllerBuilder {
+            $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
+        }
+        
+        return QRCodeReaderViewController(builder: builder)
+    }()
     
-    let app = App(name: "emosi", teamName: "popopo", square: "http://imgc.appbank.net/c/wp-content/uploads/2014/03/160713_iPhoneapp-1.jpg", urls: [ "https://www.apahotel.com/lp_app/img/img07.png" , "http://minakul.jp/wordpress/wp-content/uploads/2016/11/img3-1024x758.png" , "http://is4.mzstatic.com/image/thumb/Purple127/v4/16/8a/f6/168af63f-ef71-7b94-dda2-55cf9f3797e6/source/392x696bb.jpg" , "http://is4.mzstatic.com/image/thumb/Purple127/v4/e5/31/c8/e531c827-b2fa-19b5-ae0f-8a1eaeeb1fb9/source/392x696bb.jpg" ], about: "眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい。眠いです。私は今日徹夜をしています。ケーキバイキングに行きたい。マカロン食べて獅子力あげたい", feature: "まえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえまえ")
+    @IBAction func voteButton(_ sender: Any) {
+        // Retrieve the QRCode content
+        // By using the delegate pattern
+        readerVC.delegate = self
+        
+        // Presents the readerVC as modal form sheet
+        readerVC.modalPresentationStyle = .fullScreen
+        present(readerVC, animated: true, completion: nil)
+    }
+    
+    
+    var app = App(name: "", teamName: "", square: "", urls: [], about: "", feature: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: app.square)
+        let url = URL(string: app.square ?? "")
         mainImage.sd_setImage(with: url, completed: nil)
         nameLabel.text = app.name
         teamNameLabel.text = app.teamName
-        let bigImageUrl = URL(string: app.urls[0])
+        let bigImageUrl = URL(string: app.urls[0] ?? "")
         bigImage.sd_setImage(with: bigImageUrl, completed: nil)
         aboutLabel.text = app.about
         featureLabel.text = app.feature
@@ -65,7 +86,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Thumbnail", for: indexPath) as! ThumbnailCollectionViewCell
-        let url =  URL(string: app.urls[indexPath.row])
+        let url =  URL(string: app.urls[indexPath.row] ?? "")
         cell.thumbnail.sd_setImage(with: url, completed: nil)
         return cell
     }
@@ -75,14 +96,14 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let bigImageUrl = URL(string: app.urls[indexPath.row])
+        let bigImageUrl = URL(string: app.urls[indexPath.row] ?? "")
         bigImage.sd_setImage(with: bigImageUrl, completed: nil)
         
         let all = collectionView.visibleCells as! [ThumbnailCollectionViewCell]
         _ = all.map { $0.thumbnail.backgroundColor = .none }
         
         let cell = collectionView.cellForItem(at: indexPath) as! ThumbnailCollectionViewCell
-        cell.thumbnail.backgroundColor = .lightGray
+        cell.thumbnail.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
         
     }
 }
@@ -97,5 +118,28 @@ extension DetailViewController: UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+extension DetailViewController: QRCodeReaderViewControllerDelegate {
+    func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
+        reader.stopScanning()
+        print(result.value)
+        Alamofire.request(Router.vote(parameters: ["app_id": app.uid, "uid": result.value])).responseJSON { (response) in
+            
+            print(response.result.value)
+            let json = response.result.value as! [String:String]
+            switch json["code"] {
+            case "0"?: print("success")
+            default: print("error")
+            }
+        }
+        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "complete", sender: nil)
+    }
+    
+    func readerDidCancel(_ reader: QRCodeReaderViewController) {
+        reader.stopScanning()
+        dismiss(animated: true, completion: nil)
     }
 }
