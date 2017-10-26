@@ -11,8 +11,8 @@ import Foundation
 struct App: Codable {
     let name: String?
     let teamName: String?
-    let square: String?
-    let urls: [String?]
+    var square: String?
+    var urls: [String?]
     let about: String?
     let feature: String?
     let uid: String

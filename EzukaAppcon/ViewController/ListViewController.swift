@@ -31,7 +31,7 @@ extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! AppCollectionViewCell
-        let url =  URL(string: apps[indexPath.row].square ?? "")
+        let url =  URL(string: apps[indexPath.row].square! )
         cell.squareImage.sd_setImage(with: url, completed: nil)
         cell.nameLabel.text = apps[indexPath.row].name
         cell.teamNameLabel.text = apps[indexPath.row].teamName

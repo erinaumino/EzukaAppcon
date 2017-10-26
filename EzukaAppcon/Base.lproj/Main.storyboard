@@ -25,24 +25,20 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCy-6B-6wp"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-JA-KwA">
-                                <rect key="frame" x="114" y="118" width="606" height="323"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-JA-KwA">
+                                <rect key="frame" x="115" y="44" width="604" height="476"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="投票アイコン1.png" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-Xn-URg">
-                                <rect key="frame" x="153" y="608" width="529" height="281"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="投票アイコン1.png" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-Xn-URg">
+                                <rect key="frame" x="289.5" y="608" width="256" height="256"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投票はこちらから" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kQ-kA-6cD">
-                                <rect key="frame" x="204" y="541" width="426" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投票はこちらから" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kQ-kA-6cD">
+                                <rect key="frame" x="204" y="524.5" width="426" height="63.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="53"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="画面をタップしてください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ3-rt-ii3">
-                                <rect key="frame" x="217" y="1012" width="406" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面をタップしてください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ3-rt-ii3">
+                                <rect key="frame" x="217.5" y="982.5" width="399.5" height="39.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,6 +46,17 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14509803921568626" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Irh-JA-KwA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="3KT-cI-EqI"/>
+                            <constraint firstItem="mv5-Xn-URg" firstAttribute="top" secondItem="0kQ-kA-6cD" secondAttribute="bottom" constant="20" id="7Kc-xB-TOg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Irh-JA-KwA" secondAttribute="trailing" constant="115" id="7sy-fL-ya0"/>
+                            <constraint firstItem="0kQ-kA-6cD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OLg-x7-nOE"/>
+                            <constraint firstItem="Irh-JA-KwA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="TQC-Mp-Pdq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EQ3-rt-ii3" secondAttribute="bottom" constant="90" id="YFh-Xi-Yat"/>
+                            <constraint firstItem="mv5-Xn-URg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dSy-rZ-U0e"/>
+                            <constraint firstItem="EQ3-rt-ii3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kWZ-CR-sxB"/>
+                            <constraint firstItem="0kQ-kA-6cD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wjF-5q-fNA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="NRr-7d-tTH"/>
@@ -418,23 +425,42 @@
             </objects>
             <point key="canvasLocation" x="1731.6546762589928" y="129.49640287769785"/>
         </scene>
-        <!--View Controller-->
+        <!--Completed View Controller-->
         <scene sceneID="S70-9T-L7V">
             <objects>
-                <viewController id="ZYi-DA-yKX" sceneMemberID="viewController">
+                <viewController id="ZYi-DA-yKX" customClass="CompletedViewController" customModule="EzukaAppcon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mWA-MB-YmB">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投票完了しました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKW-nW-inc">
-                                <rect key="frame" x="60" y="185" width="275" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投票完了しました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKW-nW-inc">
+                                <rect key="frame" x="236" y="754" width="362" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ありがとうございました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ry-Fg-2eK">
+                                <rect key="frame" x="169" y="848" width="497.5" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="EvW-cu-4so">
+                                <rect key="frame" x="-116.5" y="259" width="1068" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="4Qj-34-5lc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.14509803921568626" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ry-Fg-2eK" firstAttribute="top" secondItem="RKW-nW-inc" secondAttribute="bottom" constant="40" id="MZm-b8-ffg"/>
+                            <constraint firstItem="EvW-cu-4so" firstAttribute="top" secondItem="7cR-i7-PhX" secondAttribute="top" constant="195" id="Uai-NO-zTP"/>
+                            <constraint firstItem="3ry-Fg-2eK" firstAttribute="centerX" secondItem="mWA-MB-YmB" secondAttribute="centerX" id="YFU-kY-rIw"/>
+                            <constraint firstItem="RKW-nW-inc" firstAttribute="top" secondItem="EvW-cu-4so" secondAttribute="bottom" constant="125" id="ZKD-7S-mA6"/>
+                            <constraint firstItem="RKW-nW-inc" firstAttribute="centerX" secondItem="mWA-MB-YmB" secondAttribute="centerX" id="bh2-TL-HRw"/>
+                            <constraint firstItem="EvW-cu-4so" firstAttribute="centerX" secondItem="mWA-MB-YmB" secondAttribute="centerX" id="j2n-g0-1Hc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7cR-i7-PhX"/>
                     </view>
                 </viewController>
@@ -450,6 +476,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0If-1q-GJ8">
                         <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xHR-76-8bS">
@@ -466,6 +497,7 @@
     </scenes>
     <resources>
         <image name="Logo.png" width="1154" height="476"/>
+        <image name="check.png" width="1068" height="1068"/>
         <image name="投票アイコン1.png" width="256" height="256"/>
     </resources>
 </document>

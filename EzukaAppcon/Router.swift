@@ -13,7 +13,9 @@ enum Router: URLRequestConvertible {
     case vote(parameters: Parameters)
     case readApps()
     
-    static let baseURLString = "http://192.168.2.103:3000/api/v1"
+    static let baseURL = "http://192.168.100.93:3000"
+    static let suffix = "/api/v1"
+    
     
     var method: HTTPMethod {
         switch self {
@@ -36,7 +38,8 @@ enum Router: URLRequestConvertible {
     // MARK: URLRequestConvertible
     
     func asURLRequest() throws -> URLRequest {
-        let url = try Router.baseURLString.asURL()
+        let baseURLString = Router.baseURL + Router.suffix
+        let url = try baseURLString.asURL()
         
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         urlRequest.httpMethod = method.rawValue

@@ -19,7 +19,18 @@ class AppModel {
                 let data = try! JSONSerialization.data(withJSONObject: json)
                 return try! JSONDecoder().decode(App.self, from: data)
             })
-            self.apps = apps
+            
+            self.apps = apps.map{
+                self.combineBaseURL(app: $0)
+            }
         }
+    }
+    
+    func combineBaseURL(app: App) -> App{
+        var newApp = app
+        newApp.square = Router.baseURL + (app.square ?? "")
+        newApp.urls = app.urls.map{ Router.baseURL + ($0 ?? "")}
+        return newApp
+        
     }
 }

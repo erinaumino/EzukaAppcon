@@ -46,11 +46,11 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: app.square ?? "")
+        let url = URL(string: app.square! )
         mainImage.sd_setImage(with: url, completed: nil)
         nameLabel.text = app.name
         teamNameLabel.text = app.teamName
-        let bigImageUrl = URL(string: app.urls[0] ?? "")
+        let bigImageUrl = URL(string: app.urls[0]! )
         bigImage.sd_setImage(with: bigImageUrl, completed: nil)
         aboutLabel.text = app.about
         featureLabel.text = app.feature
@@ -69,6 +69,18 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func showAlert(text: String) {
+        // アラートを作成
+        let alert = UIAlertController(
+            title: "投票失敗しました",
+            message: text,
+            preferredStyle: .alert)
+        // アラートにボタンをつける
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        // アラート表示
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension DetailViewController: UIScrollViewDelegate {
@@ -86,7 +98,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Thumbnail", for: indexPath) as! ThumbnailCollectionViewCell
-        let url =  URL(string: app.urls[indexPath.row] ?? "")
+        let url =  URL(string: app.urls[indexPath.row]! )
         cell.thumbnail.sd_setImage(with: url, completed: nil)
         return cell
     }
@@ -96,7 +108,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let bigImageUrl = URL(string: app.urls[indexPath.row] ?? "")
+        let bigImageUrl = URL(string: app.urls[indexPath.row]!)
         bigImage.sd_setImage(with: bigImageUrl, completed: nil)
         
         let all = collectionView.visibleCells as! [ThumbnailCollectionViewCell]
@@ -130,12 +142,19 @@ extension DetailViewController: QRCodeReaderViewControllerDelegate {
             print(response.result.value)
             let json = response.result.value as! [String:String]
             switch json["code"] {
-            case "0"?: print("success")
+            case "0"?:
+                print("success")
+                self.performSegue(withIdentifier: "complete", sender: nil)
+            case "1"?:
+                let message = "不正なQRコードです"
+                self.showAlert(text: message)
+            case "2"?:
+                let message = "すでに投票されたQRコードです"
+                self.showAlert(text: message)
             default: print("error")
             }
         }
         dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "complete", sender: nil)
     }
     
     func readerDidCancel(_ reader: QRCodeReaderViewController) {
