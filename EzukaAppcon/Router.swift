@@ -13,7 +13,7 @@ enum Router: URLRequestConvertible {
     case vote(parameters: Parameters)
     case readApps()
     
-    static let baseURL = "http://192.168.100.93:3000"
+    static let baseURL = "http://ec2-52-196-73-111.ap-northeast-1.compute.amazonaws.com"
     static let suffix = "/api/v1"
     
     

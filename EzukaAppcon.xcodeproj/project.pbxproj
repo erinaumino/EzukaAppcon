@@ -10,6 +10,7 @@
 		049B98B8E8E3232D7F0741F0 /* Pods_EzukaAppconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960430C7B54DD3E3DB32B6DC /* Pods_EzukaAppconUITests.framework */; };
 		16B0C552471F2D0B5DA0A7BD /* Pods_EzukaAppconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */; };
 		4CFCEC7AF0F14EA697BD5533 /* Pods_EzukaAppcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */; };
+		8010ED881FBE000C00BE68FB /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8010ED871FBE000B00BE68FB /* logo2.png */; };
 		802894031F9E82BE003A263A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802894021F9E82BE003A263A /* FirstViewController.swift */; };
 		802894051F9E8328003A263A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802894041F9E8328003A263A /* Router.swift */; };
 		802894071F9E8B28003A263A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802894061F9E8B28003A263A /* AppModel.swift */; };
@@ -52,6 +53,7 @@
 		3581B02D388EEAD1663FF279 /* Pods-EzukaAppconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzukaAppconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzukaAppconTests/Pods-EzukaAppconTests.release.xcconfig"; sourceTree = "<group>"; };
 		634BB511658E83F1F07F64A9 /* Pods_EzukaAppcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF4F0FEB5207DF1F1172F7 /* Pods_EzukaAppconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzukaAppconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8010ED871FBE000B00BE68FB /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		802894021F9E82BE003A263A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		802894041F9E8328003A263A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		802894061F9E8B28003A263A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		80CAB8E11F9BDD8200BDDB4A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8010ED871FBE000B00BE68FB /* logo2.png */,
 				80CAB8DF1F9BDD6500BDDB4A /* ListViewController.swift */,
 				80D4808F1F9BF26F00270BB9 /* DetailViewController.swift */,
 				802894021F9E82BE003A263A /* FirstViewController.swift */,
@@ -332,6 +335,7 @@
 				8032BD251F9BC4A5005C0E6B /* Assets.xcassets in Resources */,
 				8032BD231F9BC4A5005C0E6B /* Main.storyboard in Resources */,
 				80D4809F1F9CDF0900270BB9 /* 投票アイコン1.png in Resources */,
+				8010ED881FBE000C00BE68FB /* logo2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JVQD32T43P;
 				INFOPLIST_FILE = EzukaAppcon/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -694,7 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JVQD32T43P;
 				INFOPLIST_FILE = EzukaAppcon/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.litech.erina.umino.EzukaAppcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -38,6 +38,7 @@ class DetailViewController: UIViewController {
         
         // Presents the readerVC as modal form sheet
         readerVC.modalPresentationStyle = .fullScreen
+        readerVC.codeReader.switchDeviceInput()
         present(readerVC, animated: true, completion: nil)
     }
     
